@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import profile from "@/content/profile";
 
 export default function Hero() {
   return (
@@ -9,16 +10,15 @@ export default function Hero() {
         </p>
 
         <h1 className="text-6xl font-extrabold tracking-tight">
-          Kamini Parmar
+          {profile.name}
         </h1>
 
         <h2 className="mt-4 text-2xl font-semibold text-blue-600">
-          Frontend Lead | Frontend Architect
+          {profile.designation}
         </h2>
 
         <p className="mt-8 text-xl leading-9 text-gray-600">
-          Building scalable enterprise web applications with 11+ years of
-          experience across Banking, FinTech and Retail.
+          {profile.description} 
         </p>
 
         <div className="mt-10 flex gap-4">
